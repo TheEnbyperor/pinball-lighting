@@ -182,8 +182,8 @@ void do_shuffle() {
         colour[1] = 0;
         colour[2] = 255;
     } else if (120 < step && step <= 160) {
-        colour[0] = 255;
-        colour[1] = 0;
+        colour[0] = 0;
+        colour[1] = 255;
         colour[2] = 0;
     }
 }
