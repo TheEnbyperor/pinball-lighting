@@ -55,7 +55,7 @@ void process_anim(uint8_t anim) {
 }
 
 void set_colour(uint8_t r, uint8_t g, uint8_t b) {
-    digitalWrite(RED, r);
-    digitalWrite(GRN, g);
-    digitalWrite(BLU, b);
+    analogWrite(RED, r);
+    analogWrite(GRN, g);
+    analogWrite(BLU, b);
 }
