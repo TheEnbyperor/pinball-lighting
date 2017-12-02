@@ -83,6 +83,26 @@ void do_pulse() {
     }
 }
 
+void do_strobe() {
+    step += 1;
+    if (step > 150) {
+        step = 0;
+    }
+    if (0 <= step && step <= 50) {
+        colour[0] = 255;
+        colour[1] = 0;
+        colour[2] = 0;
+    } else if (50 < step && step <= 100) {
+        colour[0] = 0;
+        colour[1] = 255;
+        colour[2] = 0;
+    } else if (100 < step && step <= 150) {
+        colour[0] = 0;
+        colour[1] = 0;
+        colour[2] = 255;
+    }
+}
+
 void set_colour(uint8_t r, uint8_t g, uint8_t b) {
     analogWrite(RED, r);
     analogWrite(GRN, g);
