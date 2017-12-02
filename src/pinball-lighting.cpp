@@ -51,7 +51,36 @@ void process_anim(uint8_t anim) {
     } else if (anim == 2) {
         do_flash();
     }
+}
 
+void do_pulse() {
+    if (colour[0] == 255 && step == 0) {
+        step = 1;
+    } else if (colour[0] == 0 && step == 1) {
+        step = 2;
+    } else if (colour[1] == 255 && step == 2) {
+        step = 3;
+    } else if (colour[1] == 0 && step == 3) {
+        step = 4;
+    } else if (colour[2] == 255 && step == 4) {
+        step = 5;
+    } else if (colour[2] == 0 && step == 5) {
+        step = 0;
+    }
+
+    if (step == 0) {
+        colour[0] += 1;
+    } else if (step == 1) {
+        colour[0] -= 1;
+    } else if (step == 2) {
+        colour[1] += 1;
+    } else if (step == 3) {
+        colour[1] -= 1;
+    } else if (step == 4) {
+        colour[2] += 1;
+    } else if (step == 5) {
+        colour[2] -= 1;
+    }
 }
 
 void set_colour(uint8_t r, uint8_t g, uint8_t b) {
