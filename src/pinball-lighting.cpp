@@ -4,6 +4,8 @@
 #define GRN 5
 #define BLU 6
 
+#define NUM_ANIMS 4
+
 uint8_t currentAnim;
 uint8_t colour[3] = {0, 0, 0};
 unsigned int step = 0;
@@ -19,7 +21,7 @@ void setup() {
     pinMode(BLU, OUTPUT);
     change = millis();
     last = millis();
-    currentAnim = (uint8_t)random(0, 3);
+    currentAnim = (uint8_t)random(0, NUM_ANIMS);
     randomSeed((unsigned long)analogRead(0));
 }
 
@@ -35,13 +37,14 @@ void loop() {
         colour[0] = 0;
         colour[1] = 0;
         colour[2] = 0;
-        currentAnim = (uint8_t)random(0, 3);
+        currentAnim = (uint8_t)random(0, NUM_ANIMS);
     }
 }
 
 void do_pulse();
 void do_strobe();
 void do_flash();
+void do_shuffle();
 
 void process_anim(uint8_t anim) {
     if (anim == 0) {
@@ -50,6 +53,8 @@ void process_anim(uint8_t anim) {
         do_strobe();
     } else if (anim == 2) {
         do_flash();
+    } else if (anim == 3) {
+        do_shuffle();
     }
 }
 
@@ -154,6 +159,29 @@ void do_flash() {
         colour[2] = 255;
     } else if (110 < step && step <= 120) {
         colour[0] = 0;
+        colour[1] = 0;
+        colour[2] = 0;
+    }
+}
+
+void do_shuffle() {
+    step += 1;
+    if (step > 160) {
+        step = 0;
+    if (0 <= step && step <= 40) {
+        colour[0] = 255;
+        colour[1] = 0;
+        colour[2] = 0;
+    } else if (40 < step && step <= 80) {
+        colour[0] = 0;
+        colour[1] = 255;
+        colour[2] = 0;
+    } else if (80 < step && step <= 120) {
+        colour[0] = 0;
+        colour[1] = 0;
+        colour[2] = 255;
+    } else if (120 < step && step <= 160) {
+        colour[0] = 255;
         colour[1] = 0;
         colour[2] = 0;
     }
