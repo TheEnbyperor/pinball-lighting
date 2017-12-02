@@ -103,6 +103,62 @@ void do_strobe() {
     }
 }
 
+void do_flash() {
+    step += 1;
+    if (step > 120) {
+        step = 0;
+    }
+    if (0 <= step && step <= 10) {
+        colour[0] = 255;
+        colour[1] = 0;
+        colour[2] = 0;
+    } else if (10 < step && step <= 20) {
+        colour[0] = 0;
+        colour[1] = 0;
+        colour[2] = 0;
+    } else if (20 < step && step <= 30) {
+        colour[0] = 255;
+        colour[1] = 0;
+        colour[2] = 0;
+    } else if (30 < step && step <= 40) {
+        colour[0] = 0;
+        colour[1] = 0;
+        colour[2] = 0;
+    } else if (40 < step && step <= 50) {
+        colour[0] = 0;
+        colour[1] = 255;
+        colour[2] = 0;
+    } else if (50 < step && step <= 60) {
+        colour[0] = 0;
+        colour[1] = 0;
+        colour[2] = 0;
+    } else if (60 < step && step <= 70) {
+        colour[0] = 0;
+        colour[1] = 255;
+        colour[2] = 0;
+    } else if (70 < step && step <= 80) {
+        colour[0] = 0;
+        colour[1] = 0;
+        colour[2] = 0;
+    } else if (80 < step && step <= 90) {
+        colour[0] = 0;
+        colour[1] = 0;
+        colour[2] = 255;
+    } else if (90 < step && step <= 100) {
+        colour[0] = 0;
+        colour[1] = 0;
+        colour[2] = 0;
+    } else if (100 < step && step <= 110) {
+        colour[0] = 0;
+        colour[1] = 0;
+        colour[2] = 255;
+    } else if (110 < step && step <= 120) {
+        colour[0] = 0;
+        colour[1] = 0;
+        colour[2] = 0;
+    }
+}
+
 void set_colour(uint8_t r, uint8_t g, uint8_t b) {
     analogWrite(RED, r);
     analogWrite(GRN, g);

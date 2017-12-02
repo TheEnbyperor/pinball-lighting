@@ -3,7 +3,6 @@ import time
 import random
 import numpy
 import threading
-import keyboard
 
 
 class Control:
