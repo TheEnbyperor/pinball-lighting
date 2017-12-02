@@ -1,0 +1,1 @@
+/home/benjamin/.platformio/packages/toolchain-atmelavr/bin/avr-g++  -g  -rdynamic CMakeFiles/pinball-lighting.dir/src/pinball-lighting.cpp.o  -o pinball-lighting 

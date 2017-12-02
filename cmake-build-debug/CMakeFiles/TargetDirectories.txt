@@ -1,0 +1,11 @@
+/home/benjamin/Documents/pinball-lighting/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/benjamin/Documents/pinball-lighting/cmake-build-debug/CMakeFiles/PLATFORMIO_BUILD.dir
+/home/benjamin/Documents/pinball-lighting/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOAD.dir
+/home/benjamin/Documents/pinball-lighting/cmake-build-debug/CMakeFiles/pinball-lighting.dir
+/home/benjamin/Documents/pinball-lighting/cmake-build-debug/CMakeFiles/PLATFORMIO_CLEAN.dir
+/home/benjamin/Documents/pinball-lighting/cmake-build-debug/CMakeFiles/PLATFORMIO_PROGRAM.dir
+/home/benjamin/Documents/pinball-lighting/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/benjamin/Documents/pinball-lighting/cmake-build-debug/CMakeFiles/PLATFORMIO_TEST.dir
+/home/benjamin/Documents/pinball-lighting/cmake-build-debug/CMakeFiles/PLATFORMIO_UPLOADFS.dir
+/home/benjamin/Documents/pinball-lighting/cmake-build-debug/CMakeFiles/PLATFORMIO_REBUILD_PROJECT_INDEX.dir
+/home/benjamin/Documents/pinball-lighting/cmake-build-debug/CMakeFiles/PLATFORMIO_UPDATE_ALL.dir

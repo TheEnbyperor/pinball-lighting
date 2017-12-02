@@ -1,0 +1,4 @@
+/home/benjamin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/172.4343.16/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/benjamin/Documents/pinball-lighting
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/benjamin/Documents/pinball-lighting/cmake-build-debug
